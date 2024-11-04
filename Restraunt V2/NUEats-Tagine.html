@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagine Menu</title>
+    <style>
+        /* إعدادات أساسية */
+        body {
+        font-family: 'Arial', sans-serif;
+        background-image: url('https://ar.fekrafn.com/wp-content/uploads/2024/11/%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%B9%D9%85%D9%84-%D8%B7%D8%A7%D8%AC%D9%86-%D9%84%D8%AD%D9%85%D8%A9-%D8%A8%D8%A7%D9%84%D8%A8%D8%B5%D9%84.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        overflow-x: hidden;
+        
+    }
+
+        h1 {
+            font-size: 5em;
+            color: #fff;
+            text-shadow: 2px 2px #333;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        li {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            width: 90%;
+            max-width: 600px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideInUp 0.6s ease-in-out forwards;
+        }
+
+        li:nth-child(even) {
+            animation-delay: 0.3s;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            
+        }
+
+        li:hover img {
+            transform: rotate(10deg) scale(1.1);
+        }
+
+        hr {
+            width: 80%;
+            height: 2px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: none;
+            margin: 20px 0;
+            opacity: 0;
+            animation: slideIn 1s ease forwards;
+        }
+
+        /* أنيميشن */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; width: 0; }
+            to { opacity: 1; width: 80%; }
+        }
+
+        /* تفاعل عند التحويم */
+        li:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .back-button {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            padding: 20px 40px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 20px;
+            font-size: 26px;
+            z-index: 10;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #dcdccf;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <a href="NURestraunt-Menu.html" class="back-button" data-image="Database/NU.03.png">رجوع</a>
+
+    <h1>Tagine Menu</h1>
+    <hr>
+
+    <h2>Beef</h2>
+    <ul>
+        <li>Veal with Onions - 200 EGP <img src="https://salutationrecipes.wordpress.com/wp-content/uploads/2012/10/dsc_00621.jpg?w=584" width="50"></li>
+        <li>Veal with Vegetables - 220 EGP <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWVjWOrtaqIa--5YlGONdVH05jDTSrRCipZg&s" width="50"></li>
+        <li>Meat with Eggplant - 230 EGP <img src="https://i0.wp.com/koshercowboy.com/wp-content/uploads/2017/11/Beef-and-Eggplant-Tagine-Photo-by-NotQuiteNigella-e1510756928906.jpg?resize=600%2C814&ssl=1" width="50"></li>
+    </ul>
+    <hr>
+
+    <h2>Lamb</h2>
+    <ul>
+        <li>Okra with Lamb Meat - 250 EGP <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/81ff9e85-6f3f-4b56-89e6-2f92cf9bebd8/Derivates/caf3dda6-7a05-4176-8136-07fb02a3f615.jpg" width="50"></li>
+        <li>Molokhia with Lamb Meat - 260 EGP <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9dy_WG2CfY76e_QQTpIip5nD_9fCe4E1rDmeLCsinK2xmm1aZyFN44-nsyIx9XjUevaU&usqp=CAU" width="50"></li>
+    </ul>
+    <hr>
+
+    <h2>Vegetarian</h2>
+    <ul>
+        <li>Moroccan Mixed Vegetable - 120 EGP <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Moroccan_tagine.jpg" width="50"></li>
+        <li>Potatoes and Olives - 100 EGP <img src="https://texashillcountryoliveco.com/cdn/shop/articles/vegan-moroccan-tagine-with-potatoes-and-olives-279048_1024x1024.jpg?v=1681828202" width="50"></li>
+        <li>Okra - 90 EGP <img src="https://news.elsob7.com/wp-content/uploads/2024/05/%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%B9%D9%85%D9%84-%D8%B7%D8%A7%D8%AC%D9%86-%D8%A7%D9%84%D8%A8%D8%A7%D9%85%D9%8A%D8%A9.jpeg" width="50"></li>
+    </ul>
+    <hr>
+
+    <h2>Rice</h2>
+    <ul>
+        <li>Oven Rice - 70 EGP <img src="https://news.elsob7.com/wp-content/uploads/2024/08/%D8%B7%D8%A7%D8%AC%D9%86-%D8%B1%D8%B2-%D9%85%D8%B9%D9%85%D8%B1-%D8%A8%D8%A7%D9%84%D8%AD%D9%84%D9%8A%D8%A8-%D9%88%D8%B5%D8%AF%D9%88%D8%B1-%D8%AF%D8%AC%D8%A7%D8%AC.jpg" width="50"></li>
+        <li>Rice with Quail - 150 EGP <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/exps7492_HFBZ1081941C55-1.jpg" width="50"></li>
+    </ul>
+
+</body>
+</html>

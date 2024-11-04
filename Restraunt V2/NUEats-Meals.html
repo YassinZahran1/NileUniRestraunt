@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>الوجبات الجاهزة</title>
+<style>
+    /* إعدادات أساسية */
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://c4.wallpaperflare.com/wallpaper/997/408/959/tomato-leaves-vegetables-meat-beef-wallpaper-preview.jpg'); /* صورة خلفية للطعام */
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: inherit;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        filter: blur(10px); /* مستوى الضبابية */
+        z-index: -1;
+    }
+
+    h1 {
+        font-size: 3em;
+        color: #d35400;
+        margin-bottom: 20px;
+        animation: fadeIn 2s ease-in-out;
+        background-color: rgba(255, 255, 255, 0.8); /* خلفية شفافة للعنوان */
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        color: #2980b9;
+        font-size: 1.8em;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        animation: slideIn 1.5s ease-in-out;
+        background-color: rgba(255, 255, 255, 0.8); /* خلفية شفافة للعناوين */
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .section {
+        background-color: rgba(255, 255, 255, 0.9); /* خلفية شفافة خفيفة */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 15px 0;
+        width: 100%;
+        max-width: 600px;
+        animation: fadeInUp 1s ease-in-out;
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    img {
+        border-radius: 8px;
+        margin-right: 15px;
+        width: 80px;
+        height: 80px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        margin: 0;
+        flex: 1;
+    }
+
+    /* إعدادات الأنميشن */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+        from { transform: translateX(-50px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section:hover {
+        transform: scale(1.02);
+        transition: transform 0.3s;
+    }
+    .back-button {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            padding: 20px 40px;
+            background-color: #ffe600;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 20px;
+            font-size: 16px;
+            z-index: 10;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #cabd00;
+            cursor: pointer;
+        }
+
+</style>
+</head>
+<body>
+
+<h1>ركن الوجبات</h1>
+
+<a href="NURestraunt-Menu.html" class="back-button" data-image="Database/NU.03.png">رجوع</a>
+
+
+<h2>الأطباق الرئيسية</h2>
+<div class="section">
+    <img src="https://modo3.com/thumbs/fit630x300/235490/1561780821/%D8%B7%D8%B1%D9%8A%D9%82%D8%A9_%D8%B9%D9%85%D9%84_%D8%B3%D8%AA%D9%8A%D9%83_%D8%A7%D9%84%D9%84%D8%AD%D9%85_%D8%A7%D9%84%D9%85%D8%B4%D9%88%D9%8A_%D8%B9%D9%84%D9%89_%D8%A7%D9%84%D8%AC%D8%B1%D9%8A%D9%84.jpg" alt="ستيك اللحم">
+    <p><strong>ستيك اللحم</strong> – شرائح لحم بقرية مشوية مع صوص من اختيارك، يقدم مع البطاطس المقلية والخضار.</p>
+</div>
+<div class="section">
+    <img src="https://kitchen.sayidaty.net/uploads/small/f4/f4dd06616700c8a35cda336664339134_w750_h750.jpg" alt="دجاج مشوي">
+    <p><strong>دجاج مشوي</strong> – دجاج متبل بالأعشاب مشوي ويقدم مع الأرز المتبل والخضار الطازجة.</p>
+</div>
+<div class="section">
+    <img src="https://kitchen.sayidaty.net/uploads/small/53/53745bba4c8f1da1810cde34f98df3fd_w750_h500.jpg" alt="سمك مشوي">
+    <p><strong>سمك مشوي</strong> – فيليه السمك الطازج مشوي مع الأعشاب والليمون، يقدم مع الأرز الأبيض أو السلطة.</p>
+</div>
+
+<h2>الأطباق الجانبية</h2>
+<div class="section">
+    <img src="https://modo3.com/thumbs/fit630x300/146392/1480162729/%D8%B9%D9%85%D9%84_%D8%A8%D8%B7%D8%A7%D8%B7%D8%A7_%D9%85%D9%82%D9%84%D9%8A%D8%A9_%D9%84%D8%B0%D9%8A%D8%B0%D8%A9.jpg" alt="بطاطس مقلية">
+    <p><strong>بطاطس مقلية</strong> – بطاطس مقرمشة مقلية وتقدم مع صوص من اختيارك.</p>
+</div>
+<div class="section">
+    <img src="https://modo3.com/thumbs/fit630x300/10162/1415716088/%D8%AD%D9%84%D9%82%D8%A7%D8%AA_%D8%A7%D9%84%D8%A8%D8%B5%D9%84_%D8%A7%D9%84%D9%85%D9%82%D9%84%D9%8A%D8%A9.jpg" alt="حلقات بصل">
+    <p><strong>حلقات بصل</strong> – حلقات بصل مقرمشة مقلية، مثالية كوجبة جانبية.</p>
+</div>
+<div class="section">
+    <img src="https://modo3.com/thumbs/fit630x300/51166/1434885587/%D8%B7%D8%B1%D9%8A%D9%82%D8%A9_%D8%AA%D8%AD%D8%B6%D9%8A%D8%B1_%D8%B3%D9%84%D8%B7%D8%A9_%D9%8A%D9%88%D9%86%D8%A7%D9%86%D9%8A%D8%A9.jpg" alt="سلطة يونانية">
+    <p><strong>سلطة يونانية</strong> – مزيج من الخضروات الطازجة مع الجبن الزيتون، ويقدم مع صوص خاص.</p>
+</div>
+
+<h2>وجبات الأطفال</h2>
+<div class="section">
+    <img src="https://img-global.cpcdn.com/recipes/3514198c80b04c95/1200x630cq70/photo.jpg" alt="ميني برجر">
+    <p><strong>ميني برجر</strong> – برجر صغير بحجم مناسب للأطفال مع البطاطس المقلية.</p>
+</div>
+<div class="section">
+    <img src="https://i.ytimg.com/vi/R9K93cbVgbg/maxresdefault.jpg" alt="دجاج بوب كورن">
+    <p><strong>دجاج بوب كورن</strong> – قطع دجاج مقلية مقرمشة تقدم مع صوص من اختيار الأطفال.</p>
+</div>
+<div class="section">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlUOF_vB1fTJFN7AsJcCvyBbhYg_3ztggKfQ&s" alt="مكرونة بالجبن">
+    <p><strong>مكرونة بالجبن</strong> – مكرونة مع صوص الجبن الكريمي الشهي.</p>
+</div>
+
+<h2>الوجبات السريعة</h2>
+<div class="section">
+    <img src="https://kitchen.sayidaty.net/uploads/small/6f/6fa6ff1ba5f2d3832ef1b8ce64d2c5f5_w750_h500.jpeg" alt="برجر اللحم">
+    <p><strong>برجر اللحم</strong> – برجر لحم طازج مع الخضار وصوص من اختيارك، يقدم مع البطاطس المقلية.</p>
+</div>
+<div class="section">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRz2_Qp0wIIvn8AowL7AorcUEdmzF0W8jgaw&s" alt="برجر الدجاج">
+    <p><strong>برجر الدجاج</strong> – دجاج مقلي أو مشوي مع شرائح الطماطم والخس، يقدم مع البطاطس.</p>
+</div>
+<div class="section">
+    <img src="https://kitchen.sayidaty.net/uploads/small/d1/d1d824f354a847678aaf1c1ac1e3e1e5_w750_h750.jpg" alt="ساندويتش شاورما">
+    <p><strong>ساندويتش شاورما</strong> – شاورما دجاج أو لحم مع خبز الطابون وصلصة الثوم أو الطحينة.</p>
+</div>
+
+<h2>الوجبات الصحية</h2>
+<div class="section">
+    <img src="https://kitchen.sayidaty.net/uploads/small/99/99ee89c91389da1bede552b83df43d86_w750_h750.jpg" alt="سلطة سيزر بالدجاج">
+    <p><strong>سلطة سيزر بالدجاج</strong> – قطع دجاج مشوي على طبقة من الخس وصوص السيزر مع جبن البارميزان.</p>
+</div>
+<div class="section">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmDgxtWBEVtyeDizUPDXT8XkuKPKM2f1FfzQ&s" alt="وعاء الكينوا بالخضروات">
+    <p><strong>وعاء الكينوا بالخضروات</strong> – كينوا مطبوخة مع الخضار الطازجة والصلصة الخاصة.</p>
+</div>
+<div class="section">
+    <img src="https://static.webteb.net/images/content/ramadanrecipe_recipe_555_18034094330-c76b-44f7-ac12-35a120fdae96.jpg" alt="ساندويتش الأفوكادو">
+    <p><strong>ساندويتش الأفوكادو</strong> – خبز محشو بشرائح الأفوكادو، الطماطم، والخضار الطازجة.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Desserts Menu</title>
+<style>
+ body {
+    font-family: Arial, sans-serif;
+    background-image: url('Database/NUEats.08');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5em;
+    color: #d35400;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #0008ff, #ffffff, #00bfff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+li {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+img {
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 150px;
+    transition: transform 0.3s;
+}
+
+li:hover img {
+    transform: rotate(5deg) scale(1.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+li {
+    animation: slideUp 0.5s ease-in-out;
+}
+.back-button {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            padding: 20px 40px;
+            background-color: #d000ff;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 20px;
+            font-size: 16px;
+            z-index: 10;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #490775;
+            cursor: pointer;
+        }
+
+</style>
+</head>
+<body>
+
+<h1>Desserts Menu</h1>
+
+<a href="NURestraunt-Menu.html" class="back-button" data-image="Database/NU.03.png">رجوع</a>
+
+<ol>
+    <li>Chocolate Lava Cake  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjL-7YEbgS4h8vwT3irs7yMlR5twIPPSDhUg&s" width="75"></li>
+    <li>Cheesecake (New York Style) <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC_AVQNi4BBOaHR0ts2ZelrdBGIcIX4o8wDw&s" width="auto-fit"></li> 
+    <li>Tiramisu <img src="https://www.culinaryhill.com/wp-content/uploads/2021/01/Tiramisu-Culinary-Hill-1200x800-1.jpg" width="auto"></li>   
+    <li>Baklava  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Baklava%281%29.png" width="auto"></li>
+    <li>Panna Cotta (Vanilla)  <img src="https://food-images.files.bbci.co.uk/food/recipes/vanillapannacotta_87907_16x9.jpg" width="auto"></li>
+    <li>Fruit Tart  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxC7FIOJxu1i3ff8RcB5C7p1eaXOuy-uow3w&s" width="auto"></li>
+    <li>Crème Brûlée  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2-nyjky4HJdW3zaRLX1XKDUik0gB-Rr1XIQ&s" width="auto"></li>
+    <li>Brownie Sundae  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfgFPrsXxgRl2WOtbrlF2uYwM5yinw7-UCjQ&s" width="auto"></li>
+    <li>Mango Mousse  <img src= "https://cdn3.foodviva.com/static-content/food-images/dessert-recipes/mango-mousse/mango-mousse.jpg" width="auto"></li>
+    <li>Apple Pie  <img src="https://schoolnightvegan.com/wp-content/uploads/2022/11/vegan-apple-pie-featured-1-2.jpg" width="auto"></li>
+    <li>Date and Walnut Cake  <img src="https://cakiyo.com/_next/image?url=https%3A%2F%2Fadmin.cakiyo.com%2Fstorage%2F2997%2FDates_Walnut_Dry_Cakes.jpg&w=3840&q=75" width="75"></li>
+</ol>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم جامعه النيل</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            background: url(https://img.freepik.com/free-photo/fresh-cocktails-with-ice-lemon-lime-fruits-generative-ai_188544-12370.jpg);
+            backdrop-filter: blur(5px);
+        }
+        .back-button {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            padding: 20px 40px;
+            background-color: #138c2d; 
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 20px;
+            font-size: 16px;
+            z-index: 10;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #062d05;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #00ff08;
+        }
+        h2 {
+            color: #4CAF50;
+            font-size: 1.8em;
+            margin-top: 20px;
+        }
+        hr {
+            border: 0;
+            height: 2px;
+            background: #4CAF50;
+            margin: 20px 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 10px;
+            width: 250px;
+            text-align: left;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background-color: #e8f5e9;
+        }
+        img {
+            margin-left: 10px;
+            border-radius: 8px;
+            width: 60px;
+            height: 60px;
+        }
+        .price {
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Drinks Menu</h1>
+    <hr>
+
+    <h2>Fresh Juice</h2>
+    <ul>
+        <li>Apple + <span class="price">10.LE</span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr_qGuaVPd0FISslOUGCc4DO2JekW3EJ4Fdw&s"></li>
+        <li>Grape + <span class="price">10.LE</span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBzoysoMUyvv9-zl3qhM-oURs_HX1KmWDBeg&s"></li>
+        <li>Mango + <span class="price">10.LE</span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Sfw7_OQg20bZ9768gr4ILruVPEFHpam1RA&s"></li>
+        <li>Pineapple + <span class="price">10.LE</span> <img src="https://static.wixstatic.com/media/d612d2_447e30fbdf9241819d1008a9bdd97eee~mv2.jpg/v1/fill/w_560,h_560,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Pineapple2.jpg"></li>
+        <li>Pomegranate + <span class="price">10.LE</span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM9XKsBxR30YIatSMOu8JoPL_vV20piDDC3Q&s"></li>
+        <li>Strawberry + <span class="price">10.LE</span> <img src="https://i.pinimg.com/474x/db/f0/04/dbf004bfe8522da759eaf94190290aa3.jpg"></li>
+        <li>Watermelon + <span class="price">10.LE</span> <img src="https://cdn.britannica.com/99/143599-050-C3289491/Watermelon.jpg"></li>
+    </ul>
+    <hr>
+
+    <h2>Cold Drinks</h2>
+    <ul>
+        <li>Iced Tea     + <span class="price">25.LE</span> <img src="https://static.wixstatic.com/media/864544_6657160a63324c288a2f50f09bdb3f05~mv2.jpg/v1/fill/w_480,h_384,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/864544_6657160a63324c288a2f50f09bdb3f05~mv2.jpg"></li>
+        <li>Boba (Milk/Fruit) + <span class="price">140.LE</span> <img src="https://tyberrymuch.com/wp-content/uploads/2023/06/coffee-milk-bubble-tea-recipe-720x720.jpg"></li>
+    </ul>
+    <hr>
+
+    <h2>Hot Drinks</h2>
+    <ul>
+        <li>Hot Chocolate + <span class="price">20.LE</span> <img src="https://images.getrecipekit.com/20230327191313-Kettle_HotChoco.jpg?width=650&quality=90&"></li>
+        <li>Tea + <span class="price">15.LE</span> <img src="https://www.foodandwine.com/thmb/6wTm7a0y87X97LK-ZMxe2787kI8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/different-types-of-tea-FT-BLOG0621-7c7fd231e66d4fea8ca9a47cad52ba79.jpg"></li>
+    </ul>
+    <hr>
+
+    <h2>Coffee</h2>
+    <ul>
+        <li>Turkish Coffee + <span class="price">20.LE</span> <img src="https://www.agriniopress.gr/wp-content/uploads/2024/08/kafes.jpg"></li>
+        <li>Espresso + <span class="price">20.LE</span> <img src="https://xanders.pk/wp-content/uploads/2022/02/ESPRESSO.jpg"></li>
+        <li>Latte + <span class="price">30.LE</span> <img src="https://athome.starbucks.com/sites/default/files/2022-04/CAH_ClassicLatte_Hero_0.jpg"></li>
+        <li>Cappuccino + <span class="price">30.LE</span> <img src="https://recettes.vedrenne.fr/1269-large_default/gingerbread-cappuccino.jpg"></li>
+    </ul>
+    <hr>
+
+    <h2>Soda</h2>
+    <ul>
+        <li>7UP - <span class="price">10.LE</span> <img src="https://giannikosb2b.gr/wp-content/uploads/2021/07/done-7up_330ml.jpg"></li>
+        <li>Coca-Cola - <span class="price">10.LE</span> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Coca_Cola_Flasche_-_Original_Taste.jpg/190px-Coca_Cola_Flasche_-_Original_Taste.jpg"></li>
+        <li>Fanta - <span class="price">10.LE</span> <img src="https://hongphatfood.com/wp-content/uploads/2023/05/Fanta-Orange-Soft-Drink.jpg"></li>
+        <li>Mirinda - <span class="price">10.LE</span> <img src="https://spicedivine.ca/cdn/shop/products/8964000101506_1200x1200.jpg?v=1709511362"></li>
+        <li>Mountain Dew - <span class="price">10.LE</span> <img src="https://marino.ae/cdn/shop/files/Mountain-Dew-Can-300-ml-24x300ml-_1-carton_-Marino.AE-234610432.jpg?v=1707549024"></li>
+        <li>Pepsi - <span class="price">10.LE</span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWAZZlSJBkQiz4u6AHEwSV0VuyiA8UJNBppA&s"></li>
+    </ul>
+    <hr>
+
+    <h2>Water</h2>
+    <ul>
+        <li>Water - 5.LE <img src="https://media.supermart.ae/15407-large_default/nestle-pure-life-water-600ml.jpg" width="50"></li>
+        <li>Sparkling Water - 10.LE <img src="https://gourmetegypt.com/media/catalog/product/6/2/6225000332928-.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=&width=" width="50"></li>
+
+    </ul>
+    <a href="NURestraunt-Menu.html" class="back-button" data-image="Database/NU.03.png">رجوع</a>
+
+</body>
+</html>            
+            

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>الكريبات</title>
+<style>
+    
+    body {
+        font-family: Arial, sans-serif;
+        color: #333;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background-image: url('./Database/NUEats.07.webp');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 5em;
+        color: #e74c3c;
+        margin-top: 20px;
+        animation: fadeIn 2s;
+    }
+
+    h2, h3 {
+        color: #013557;
+        font-size: 3em;
+        margin: 20px 0;
+        animation: slideIn 1.5s;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    li {
+        background: rgba(255, 255, 255, 0.8); 
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 10px;
+        width: 250px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        animation: fadeInUp 1s ease-in-out;
+    }
+
+    li:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        border-radius: 5px;
+        margin-top: 10px;
+        transition: transform 0.3s;
+    }
+
+    li:hover img {
+        transform: rotate(5deg) scale(1.1);
+        backdrop-filter: blur(1000px);
+
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+        from { transform: translateX(-100px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .back-button {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            padding: 20px 40px;
+            background-color: #ffe600;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 20px;
+            font-size: 16px;
+            z-index: 10;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #cabd00;
+            cursor: pointer;
+        }
+</style>
+</head>
+<body>
+
+<h1>منيو الكريبات</h1>
+
+<a href="NURestraunt-Menu.html" class="back-button" data-image="Database/NU.03.png">رجوع</a>
+
+
+<h2>الكريبات الحادقه</h2>
+<ul>
+    <li>كريب الدجاج المشوي - 45 جنيه <img src="https://kosharishobra.net/wp-content/uploads/2024/05/%D9%85%D9%8A%D9%83%D8%B3-%D8%AC%D8%B1%D9%8A%D9%84.webp" width="75"></li>
+    <li>كريب الدجاج الحار - 50 جنيه <img src="https://files.oaiusercontent.com/file-Xj8NWHlIOjjLfkKP46rlhMyS?se=2024-10-29T19%3A55%3A07Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Da14406da-4f25-48a3-8c8d-352622e1c250.webp&sig=0FQoF/zkGey9eEtpqBHYPKalb8w/1kWCmsCexU8i4Co%3D" width="75"></li>
+    <li>كريب الخضروات - 35 جنيه <img src="https://darelhilal.com/Media/News/2022/10/15/2022-638014006105093137-509.jpg" width="75"></li>
+    <li>كريب السوسيس - 50 جنيه <img src="https://www.sabaharabi.com/img/22/04/28/516691.jpg" width="75"></li>
+    <li>كريب الجبنة واللحم المدخن - 60 جنيه <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTikAeSM37pN3gfe1pKNVxxMA0oImT57nnBtA&s" width="75"></li>
+    <li>كريب اللحم البقري - 65 جنيه <img src="https://i.ytimg.com/vi/uz2RohaiDQU/maxresdefault.jpg" width="75"></li>
+    <li>كريب السجق البلدي - 55 جنيه <img src="https://images.deliveryhero.io/image/talabat/Menuitems/crepe_super_beef638282337770884102.jpg" width="75"></li>
+    <li>كريب التونة - 40 جنيه <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpdhdLBN-JPNKlBUjTSOigyYhwE_vA4b1AqQ&s" width="75"></li>
+</ul>
+
+<h3>الكريبات الحلوه</h3>
+<ul>
+    <li>كريب الشوكولاتة - 40 جنيه <img src="https://i.ytimg.com/vi/yk0_1lQ8HFs/hqdefault.jpg" width="75"></li>
+    <li>كريب الشوكولاتة والموز - 45 جنيه <img src="https://img.youm7.com/ArticleImgs/2021/2/4/114543-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%B9%D9%85%D9%84-%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D8%A8-%D8%A8%D8%A7%D9%84%D9%85%D9%88%D8%B2-%D9%88%D8%A7%D9%84%D8%B4%D9%8A%D9%83%D9%88%D9%84%D8%A7%D8%AA%D8%A9.jpg" width="75"></li>
+    <li>كريب النوتيلا - 55 جنيه <img src="https://kitchen.sayidaty.net/uploads/small/ea/ea08eac4f338217aedcb16849ff9b486_w750_h500.jpg" width="75"></li>
+    <li>كريب الكراميل - 50 جنيه <img src="https://kitchen.sayidaty.net/uploads/small/4a/4ae1a308edd5e517baff9139c9725acf_w750_h750.jpg" width="75"></li>
+    <li>كريب اللوتس - 60 جنيه <img src="https://img.youm7.com/ArticleImgs/2022/8/18/184970-%D9%83%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D9%84%D9%88%D8%AA%D8%B3.jpg" width="75"></li>
+    <li>كريب الأوريو - 55 جنيه <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuz6CLRM6-87DAesid9o5cs7fSHER9O-0dMw&s" width="75"></li>
+    <li>كريب الفراولة والكريمة - 50 جنيه <img src="https://thetablediaries.com/wp-content/uploads/2020/12/crepe.jpg" width="75"></li>
+    <li>كريب العسل والمكسرات - 65 جنيه <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX3erRgKazVF9i9l_gcnt4CVcFoUgBpEC9zg&s" width="75"></li>
+</ul>
+
+</body>
+</html>

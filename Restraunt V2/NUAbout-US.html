@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - مطعم جامعة النيل</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: center;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background: linear-gradient(135deg, #1c1c1c, #343a40);
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('Database/NU.03.webp') no-repeat center center;
+            background-size: cover;
+            z-index: -1;
+            opacity: 0.3;
+            filter: blur(4px);
+        }
+
+        /* طبقة البرق */
+        .lightning {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: white;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 1;
+            transition: opacity 0.1s;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            color: #ffd700;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+            color: #f0f0f0;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+            animation-delay: 0.5s;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .highlight {
+            color: #ff6a00;
+            font-weight: bold;
+        }
+
+        .button-container {
+            margin-top: 30px;
+            animation: fadeIn 1s ease-out forwards;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+
+        .back-button {
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #ff6a00, #ff0000);
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .back-button:hover {
+            background: linear-gradient(45deg, #ffd700, #ff6a00);
+            box-shadow: 0px 8px 20px rgba(255, 165, 0, 0.5);
+            cursor: pointer;
+        }
+
+        .team-section {
+            margin-top: 50px;
+        }
+
+        .team-member {
+            display: inline-block;
+            width: 180px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            margin: 10px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .team-member h3 {
+            color: #ffd700;
+            font-size: 1.2em;
+            margin: 10px 0 5px;
+        }
+
+        .team-member p {
+            color: #ccc;
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 25px rgba(255, 255, 0, 0.5);
+        }
+
+        .team-member#andro-profile {
+            width: 220px;
+            background: rgba(255, 215, 0, 0.2);
+            border: 2px solid #ff6a00;
+        }
+
+        .team-member#andro-profile img {
+            width: 120px;
+            height: 120px;
+            box-shadow: 0px 8px 20px rgba(255, 255, 0, 0.5);
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 130px;
+            height: 130px;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <img src="Database/NU.00.png" alt="لوجو جامعة النيل" class="logo">
+
+    
+    <div class="lightning" id="lightning"></div>
+
+    
+    <audio id="thunderSound" src="Database/thunder.mp3" preload="auto"></audio>
+
+    <div class="content">
+        <h1>من نحن؟</h1>
+        <p>نحن <span class="highlight">مطعم جامعة النيل</span>، ملتزمون بتقديم أفضل الأطباق اللذيذة والمأكولات ذات الجودة العالية. هدفنا هو إرضاء كل طالب وزائر من خلال مزيج من <span class="highlight">الطعام الرائع</span> و<span class="highlight">الخدمة الممتازة</span>.</p>
+
+        <div class="button-container">
+            <a href="NURestraunt.html" class="back-button">رجوع إلى القائمة</a>
+        </div>
+
+        <div class="team-section">
+            <h2>فريقنا المميز</h2>
+
+            <div class="team-member" id="andro-profile">
+                <img src="Database/ARX_animated.gif" alt="Andrew Raouf">
+                <h3>Andrew Raouf</h3>
+                <p>Team Leader</p>
+            </div>
+
+            <div class="team-member">
+                <img src="Database\NUTeam.02.jpg" alt="Ahmed Alaa">
+                <h3>Ahmed Alaa</h3>
+                <p>Team Co-Leader</p>
+            </div>
+            <div class="team-member">
+                <img src="Database\NUTeam.01.png" alt="Yassin Zahran">
+                <h3>Yassin Zahran</h3>
+                <p>Team Co-Leader</p>
+            </div>
+            <div class="team-member">
+                <img src="Database\NUTeam.03.png" alt="Youssef Waleed">
+                <h3>Youssef Waleed</h3>
+                <p>Team Member</p>
+            </div>
+            <div class="team-member">
+                <img src="Database\NUTeam.04.jpg" alt="Sherif Wael">
+                <h3>Sherif Wael</h3>
+                <p>Team Member</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function triggerLightning() {
+            const lightning = document.getElementById('lightning');
+            const thunderSound = document.getElementById('thunderSound');
+
+            lightning.style.opacity = '1';
+            setTimeout(() => {
+                lightning.style.opacity = '0';
+            }, 100);
+
+            thunderSound.currentTime = 0;
+            thunderSound.play();
+        }
+
+        setInterval(() => {
+            if (Math.random() < 0.3) { 
+                triggerLightning();
+            }
+        }, 3000);
+    </script>
+</body>
+</html>
